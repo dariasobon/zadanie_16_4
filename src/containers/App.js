@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './App.css';
+import Title from '../components/Title';
 
 class App extends React.Component {
 	constructor(props) {
@@ -26,9 +27,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className={style.TodoApp}>
-				<Title title = 'To do list'
-					count = {this.state.data.length}
-				/>
+				<Title title='To do list' count={this.state.data.length} />
 			</div>
 		);
 	}
